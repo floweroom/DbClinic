@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DbClinic.Migrations
 {
     [DbContext(typeof(PersonDb))]
-    [Migration("20230512124640_2")]
-    partial class _2
+    [Migration("20230513024329_1")]
+    partial class _1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,30 +36,24 @@ namespace DbClinic.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("AnamnesisDesise")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AnamnesisLife")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("ObjectStatus")
                         .HasColumnType("bit");
 
                     b.Property<string>("PersonalData")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PlanSurvey")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PlanTherapy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Recomendation")

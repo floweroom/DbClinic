@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DbClinic.DataBase
 {
-    internal class PersonDb : DbContext
+    public class PersonDb : DbContext
     {
         public DbSet<Person> Persons { get; set; }
 

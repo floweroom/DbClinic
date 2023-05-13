@@ -33,30 +33,24 @@ namespace DbClinic.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("AnamnesisDesise")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AnamnesisLife")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("ObjectStatus")
                         .HasColumnType("bit");
 
                     b.Property<string>("PersonalData")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PlanSurvey")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PlanTherapy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Recomendation")

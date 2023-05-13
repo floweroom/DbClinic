@@ -25,8 +25,9 @@ using (var db = new PersonDb(options))
     person.AnamnesisDesise = "Обратился с болью в области сердца";
     person.AnamnesisLife = "Аллергия на пыль; болел туберкулезом";
     person.ObjectStatus = false;
-    person.PlanSurvey = "Анализ крови,биохимия, посев мокроты";
+    person.PlanSurvey = "Анализ крови; биохимия, посев мокроты";
     person.PlanTherapy = "Диета";
+    person.Recomendation = null;
 
     Person person1 = new Person();
     person.Id = 02;
@@ -36,8 +37,9 @@ using (var db = new PersonDb(options))
     person.AnamnesisDesise = "Обратился с болью в области головы";
     person.AnamnesisLife = "Аллергия на пыль; не болел туберкулезом, есть биполярное растройство личности";
     person.ObjectStatus = true;
-    person.PlanSurvey = "Анализ крови,биохимия, ЭКГ";
+    person.PlanSurvey = "Анализ крови; биохимия, ЭКГ";
     person.PlanTherapy = "Трепанация черепа";
+    person.Recomendation = null;
 
     Person person2 = new Person();
     person.Id = 03;
@@ -47,8 +49,9 @@ using (var db = new PersonDb(options))
     person.AnamnesisDesise = "Обратился с нарушением менструального цикла";
     person.AnamnesisLife = "Аллергия отсутствует; не болел туберкулезом";
     person.ObjectStatus = true;
-    person.PlanSurvey = "Анализ крови,биохимия, ЭКГ";
+    person.PlanSurvey = "Анализ крови; биохимия";
     person.PlanTherapy = "Обследование";
+    person.Recomendation = null;
 
     db.Persons.Add(person);
     db.Persons.Add(person1);
