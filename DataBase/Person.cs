@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DbClinic.DataBase
 {
-    public class Person
+    internal class Person
     {
         public int Id { get; set; }
 
